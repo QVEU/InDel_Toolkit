@@ -53,7 +53,34 @@ To identify reads with 9 bp deletions from an example SAM:
 
 ```bash
 cd InDel_Toolkit/lib/
-python stickleback.py ../test/stickleback_test.sam [SEQUENCE] ../lib/templates/EV_A71_Tainan.fa
+python stickleback.py ../test/stickleback_test.sam agcgggagaccggggtctctgagcg templates/puc19-ev71-twtainan1998_4643-bsmbi-and-bsai-free-deleted-1-annotations-1-7471.fasta 
+
+
+----------------=============-----------------
+--==--==--==--==   ><```º>   ==--==--==--==--=
+==--==--==--==-- stickleback --==--==--==--==-
+----------------=============-----------------
+
+
+Query Length: 25
+Template Length: 7471
+Template-Query Distance: 9
+Mapping Reads of Size 25 to 7471 with a cutoff of 7
+
+Loading SAM: ../test/stickleback_test.sam
+Total Candidate Reads: 250
+
+Outfile: ../test/stickleback_test_stickleback.csv
+
+1. Computing minimum distance hit position for 247 reads.
+Query: AGCGGGAGACCGGGGTCTCTGAGCG
+2. Mapping minimum distance site on template sequence...
+done.
+
+Mapped hits in 36 reads.
+Done in 0.03356982072194417 minutes.
+Wrote ../test/stickleback_test_stickleback.csv.
+
 ```
 
 ### DelMapper Example
