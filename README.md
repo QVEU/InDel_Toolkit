@@ -52,7 +52,8 @@ python stickleback.py <pathto/input.sam (str)> <query sequence (str)> </path/to/
 To identify reads with 9 bp deletions from an example SAM:
 
 ```bash
-python stickleback.py output_test.sam 9 /nsPs_9D_PTD.csv
+cd InDel_Toolkit/lib/
+python stickleback.py ../test/stickleback_test.sam [SEQUENCE] ../lib/templates/EV_A71_Tainan.fa
 ```
 
 ### DelMapper Example
@@ -69,8 +70,8 @@ python smelt.py <inputfile.sam (str)> <Deletion Size (int)> <outputfile.csv (str
 To identify reads with 9 bp deletions from an example SAM:
 
 ```bash
-python smelt.py output_test.sam 9 output_test.csv
-
+cd InDel_Toolkit/lib/
+python smelt.py ../test/smelt_test.sam ../test/smelt_test.csv
 ```
 
 ### Contributing
