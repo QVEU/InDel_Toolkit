@@ -54,8 +54,8 @@ def posParse(cigarList):
 	return(delList)
 
 #Functions
-#  parselist: takes list of substrings and classifies them based on 
-#    
+#  parselist: takes list of output of difflib function and tabulates the position by counting the insertions and deletions relative to the reference. 
+
 def parselist(difflist):
 	nlist=[]
 	n=-1
