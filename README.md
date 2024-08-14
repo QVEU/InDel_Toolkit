@@ -94,11 +94,11 @@ python smelt.py <inputfile.sam (str)> <Deletion Size (int)> <outputfile.csv (str
 
 ```
 
-To identify reads with 9 bp deletions from an example SAM:
+To identify reads with 3 bp deletions from an example SAM:
 
 ```bash
 cd InDel_Toolkit/lib/
-python smelt.py ../test/smelt_test.sam ../test/smelt_test.csv
+python smelt.py ../test/smelt_test.sam 3 ../test/smelt_test.csv
 ```
 
 ### Contributing
