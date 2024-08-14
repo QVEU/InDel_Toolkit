@@ -148,7 +148,7 @@ def poolBlocks(query,pdSam,nthreads=14): #uses multithreading to compute the mat
         pdSam['minD'],   pdSam['minPos'],   pdSam['matchseq'],    pdSam['context'],   pdSam['matchlist']   = zip(*p.map(blockDist, [(c.upper(),query.upper()) for c in pdSam.seq]))
 
         print("2. Mapping minimum distance site on template sequence...")
-        pdSam['minD_v'], pdSam['minPos_v'], pdSam['matchseq_v'] , pdSam['context_v'], pdSam['matchlist_v'] = zip(*p.map(blockDist, [(templateSeq.upper(),c.replace("\|","").upper()) for c in pdSam.context]))
+        pdSam['minD_v'], pdSam['minPos_v'], pdSam['matchseq_v'] , pdSam['context_v'], pdSam['matchlist_v'] = zip(*p.map(blockDist, [(templateSeq.upper(),c.replace("\\|","").upper()) for c in pdSam.context]))
         print("done.")
         pdSam['insPos_v']=pdSam["minPos_v"]+26 #EDITED 4/22/23 PTD. SAME AS contextWindow EDITEDWB:+26to fix python indexing
     return(pdSam)
