@@ -2,7 +2,7 @@
 
 ## Overview
 
-Useful scripts for dealing with InDel Data. 
+Useful scripts for dealing with sequencing data from insertional and deletional mutational scanning experiments. 
 
 ## Features
 
