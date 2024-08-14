@@ -101,6 +101,9 @@ cd InDel_Toolkit/lib/
 python smelt.py ../test/smelt_test.sam 3 ../test/smelt_test.csv
 ```
 
+### Referencing
+Please cite: Bakhache, W., Orr, W., McCormick, L. & Dolan, P., Uncovering Structural Plasticity of Enterovirus A through Deep Insertional and Deletional Scanning. Research Square (Preprint) (2024).
+
 ### Contributing
 
 Steps to contribute: 
