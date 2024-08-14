@@ -15,12 +15,13 @@ Useful scripts for dealing with InDel Data.
 
 - Python 3.0+
 
+- And python packages, via *pip*:
+  
 ```bash
 pip install numpy
 pip install pandas
-pip install time
-pip install re
 pip install multiprocessing
+pip install Bio
 ```
 
 ### Installing
@@ -38,18 +39,30 @@ pip install multiprocessing
 
 ### Stickleback Example
 
-### DelMapper Example
-
-DelMapper takes an SAM file, reads the [cigar strings](https://jef.works/blog/2017/03/28/CIGAR-strings-for-dummies/), and identifies reads with deletions of a given size relative to the reference. It identifies these deletions on the translated sequence relative to a translated nucelotide reference to resolve ambiguities, and is therefore specifically designed for engineered libraries where specific codons are deleted. 
+Stickleback was design to map long-read sequencing libraries from nanopore or pacbio containing engineered libraries containing any defined insertion introduced via the [SPINE](https://academic.oup.com/nar/article/48/2/e11/5634037) pipeline.
 
 ```bash
-python DelMapper_v0.1.py < inputfile.sam (str)> < delSize (int)> < outputfile.csv (str)> 
+python stickleback.py < inputfile.sam (str)> < delSize (int)> < outputfile.csv (str)> 
 ```
 
 To identify reads with 9 bp deletions from an example SAM:
 
 ```bash
-python DelMapper.py output_test.sam 9 /nsPs_9D_PTD.csv
+python stickleback.py output_test.sam 9 /nsPs_9D_PTD.csv
+```
+
+### DelMapper Example
+
+DelMapper compliments Stickleback, and is used to tabulate *deletions* across coding sequences. It takes an SAM file (from Illumina Sequencing, or other high-accuracy NGS methods), reads the [cigar strings](https://jef.works/blog/2017/03/28/CIGAR-strings-for-dummies/), and identifies reads with deletions of a given size relative to the reference. It identifies these deletions on the translated sequence relative to a translated nucelotide reference to resolve ambiguities, and is therefore specifically designed for engineered libraries where specific codons are deleted. 
+
+```bash
+python smelt.py < inputfile.sam (str)> < delSize (int)> < outputfile.csv (str)> 
+```
+
+To identify reads with 9 bp deletions from an example SAM:
+
+```bash
+python smelt.py output_test.sam 9 output_test.csv
 
 ```
 
