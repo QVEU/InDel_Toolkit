@@ -49,7 +49,7 @@ python stickleback.py <pathto/input.sam (str)> <query sequence (str)> </path/to/
 
 ```
 
-To identify reads with 9 bp deletions from an example SAM:
+To identify reads with insertions from an example SAM:
 
 ```bash
 > cd InDel_Toolkit/
