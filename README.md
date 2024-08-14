@@ -15,6 +15,14 @@ Useful scripts for dealing with InDel Data.
 
 - Python 3.0+
 
+```bash
+pip install numpy
+pip install pandas
+pip install time
+pip install re
+pip install multiprocessing
+```
+
 ### Installing
 
 1. Clone the repository:
@@ -25,8 +33,8 @@ Useful scripts for dealing with InDel Data.
     ```bash
     cd InDel_Toolkit
     ```
-
-## Usage
+    
+## Command-Line Usage
 
 ### Stickleback Example
 
@@ -43,14 +51,6 @@ To identify reads with 9 bp deletions from an example SAM:
 ```bash
 python DelMapper.py output_test.sam 9 /nsPs_9D_PTD.csv
 
-```
-
-### Command-Line Usage
-
-If your project includes command-line tools, provide examples:
-
-```
-python your_script.py --option value
 ```
 
 ### Contributing
