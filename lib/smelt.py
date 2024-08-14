@@ -32,7 +32,6 @@ import numpy as np
 import sys
 from Bio import Seq
 import difflib
-#import pysam
 
 #Functions
 #  posParse:
