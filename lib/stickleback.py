@@ -17,7 +17,6 @@ v0.2 version notes:
 import pandas as pd
 import Levenshtein
 import time
-import re
 import numpy as np
 import sys
 from multiprocessing import Pool
