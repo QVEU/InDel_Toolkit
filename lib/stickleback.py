@@ -53,7 +53,7 @@ def Initialize(args):
     with open(template,'r') as fasta:
         templateSeq="".join([i.strip() for i in fasta][1:])
     print("Template Length: {}".format(len(templateSeq)))
-
+    
     Dtemp=blockDist((templateSeq.upper(),query.upper()))[0] #compute the distance to the template (without insert) to determine sensitivity.
     print("Template-Query Distance: {}".format(Dtemp))
 
