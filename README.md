@@ -128,4 +128,4 @@ GitHub Issues: Submit an issue
 
 ### Acknowledgements
 
-The authors are thankful for minimap2.
+The authors are thankful for [minimap2](https://github.com/lh3/minimap2).
