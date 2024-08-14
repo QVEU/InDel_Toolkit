@@ -22,6 +22,7 @@ pip install numpy
 pip install pandas
 pip install multiprocessing
 pip install Bio
+pip install levenshtein
 ```
 
 ### Installing
