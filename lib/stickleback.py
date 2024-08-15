@@ -39,8 +39,8 @@ def Initialize(args):
 
 
     #Check for Args
-    if len(args)<3:
-        print("USAGE: python stickleback.py pathto/input.sam query templateFasta [minLength] [maxLength]   ( [arg] = optional argument)")
+    if len(args)<4:
+        print("USAGE: python stickleback.py pathto/input.sam query templateFasta [minLength] [maxLength] ( [arg] = optional argument)")
         exit()
 
     #Query
@@ -57,7 +57,7 @@ def Initialize(args):
     print("Template-Query Distance: {}".format(Dtemp))
 
     #Choose Read Size
-    if len(args)>4:
+    if len(args)==6:
         minL=int(args[4]) # read length minimum
         maxL=int(args[5]) # read length maximum
     else:
