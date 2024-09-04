@@ -29,8 +29,18 @@ Module Versions Tested:
 - numpy: '1.26.4' * Note: this was developed and run prior to release of numpy 2.+, however no conflicts are expected. Please notify us of any usage issues. 
 - pandas: '2.2.2'
 - multiprocessing: '2.6.2.1'
-- Bio: '1.84'
+- Bio: '1.7.1'
 - levenshtein: '0.25.1'
+
+To install these tested module versions, via *pip*:
+  
+```bash
+pip install numpy==1.26.4
+pip install pandas==2.2.2
+pip install multiprocessing==2.6.2.1
+pip install Bio==1.7.1
+pip install Levenshtein==0.25.1
+```
 
 
 ### Installing
