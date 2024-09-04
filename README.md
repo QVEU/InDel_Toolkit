@@ -26,11 +26,12 @@ pip install Levenshtein
 ```
 
 Module Versions Tested: 
-- numpy '2.2.2'
-- pandas '2.2.2'
-- multiprocessing '2.2.2'
-- Bio '1.7.1'
-- levenshtein '0.25.1'
+- numpy: '1.26.4' * Note: this was developed and run prior to release of numpy 2.+, however no conflicts are expected. Please notify us of any usage issues. 
+- pandas: '2.2.2'
+- multiprocessing: '2.6.2.1'
+- Bio: '1.84'
+- levenshtein: '0.25.1'
+
 
 ### Installing
 
