@@ -88,7 +88,7 @@ Wrote test/stickleback_test_stickleback.csv.
 *smelt* compliments Stickleback, and is used to tabulate *deletions* across coding sequences. It takes an SAM file (from Illumina Sequencing, or other high-accuracy NGS methods), reads the [cigar strings](https://jef.works/blog/2017/03/28/CIGAR-strings-for-dummies/), and identifies reads with deletions of a given size relative to the reference. It identifies these deletions on the translated sequence relative to a translated nucelotide reference to resolve ambiguities, and is therefore specifically designed for engineered libraries where specific codons are deleted. 
 
 ```bash
-python smelt.py <inputfile.sam (str)> <Deletion Size (int)> <template.fasta (str)>
+python smelt.py <input_file.sam (str)> <Deletion Size (int)> <output.csv (str)>
 
 # <> = req'd argument
 
