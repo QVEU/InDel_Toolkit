@@ -22,8 +22,15 @@ pip install numpy
 pip install pandas
 pip install multiprocessing
 pip install Bio
-pip install levenshtein
+pip install Levenshtein
 ```
+
+Module Versions Tested: 
+- numpy '2.2.2'
+- pandas '2.2.2'
+- multiprocessing '2.2.2'
+- Bio '1.7.1'
+- levenshtein '0.25.1'
 
 ### Installing
 
