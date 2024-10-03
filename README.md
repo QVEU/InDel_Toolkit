@@ -9,6 +9,8 @@ Useful scripts for dealing with sequencing data from insertional and deletional 
 - stickleback: A python script for mapping long-reads sequencing data with engineered insertion sequences.
 - smelt: A python script for parsing and counting insertions and deletions of defined size in sam files. 
 
+![InDels!](Computational_Pipeline.png)
+
 ## Installation
 
 ### Prerequisites
